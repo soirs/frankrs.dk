@@ -2,17 +2,7 @@
 
 import React from "react";
 import "./Home.css";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-
-// import Home from "./components/home/Home";
-import Navigation from "../navigation/Navigation";
-import Bio from "../bio/Bio";
-import Header from "../header/Header";
-import Work from "../work/Work";
-
-// Projects
-import Wiki from "../work/projects/wiki/Wiki";
-import Quote from "../work/projects/quote/Quote";
+import "react-router-dom";
 
 const Home = () => (
    <div className="home">

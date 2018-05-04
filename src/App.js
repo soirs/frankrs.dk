@@ -19,14 +19,6 @@ const App = () => {
       <BrowserRouter>
         <div className="App">
 
-        <Helmet>
-        <meta charSet="utf-8" />
-        <title>Mum told me I was dynamic</title>
-        <link rel="canonical" href="https://frankrs.dk" />
-
-        <script defer src="https://pro.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-rAGYBPVpurUH2YLc/Skiv4TE1iQ/wAocPQdQT73UR0LEZ3Os2E3wGBn9fRISQJIK" crossorigin="anonymous"></script>
-        </Helmet>
-
           <Header />
           <Navigation/>
 
@@ -37,6 +29,14 @@ const App = () => {
             <Route exact path='/Wiki' component={Wiki}/>
             <Route exact path='/Quote' component={Quote}/>
           </Switch>
+
+          <Helmet>
+          <meta charSet="utf-8" />
+          <title>Mum told me I was dynamic</title>
+          <link rel="canonical" href="https://frankrs.dk" />
+  
+          <script defer src="https://pro.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-rAGYBPVpurUH2YLc/Skiv4TE1iQ/wAocPQdQT73UR0LEZ3Os2E3wGBn9fRISQJIK" crossorigin="anonymous"></script>
+          </Helmet>
 
         </div>
       </BrowserRouter>
