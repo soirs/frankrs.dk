@@ -1,0 +1,27 @@
+/* Work.css */
+
+/* .App {
+    background-color: red;    
+} */
+
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+}
+.project a {
+    border-bottom: 2px solid white;    
+}
+
+.project {
+    display: grid;
+}
+
+.wiki {
+    grid-column: 1;
+}
+
+.quote {
+    grid-column: 2;
+}

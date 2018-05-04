@@ -1,0 +1,33 @@
+body {
+  background-color: #2A4797;    
+}
+
+a::hover {
+  color: red;
+}
+
+.icon {
+  /* margin-right: 4%; */
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2%;
+}
+
+.contact-item {
+  display: grid;
+  border-bottom: 2px solid white;
+}
+
+.phone {
+  grid-column: 1;
+}
+
+.mail {
+  grid-column: 2;
+}
+.linkedin {
+  grid-column: 3;
+}

@@ -1,0 +1,16 @@
+@import url("https://use.typekit.net/qcn8ytc.css");
+@import './css/normalize.css';
+@import './css/variables.css';
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: rgb(244, 245, 240);
+  font-family: "europa", "Avenir", Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(244, 245, 240);
+  margin: 20px;
+}

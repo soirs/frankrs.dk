@@ -1,0 +1,11 @@
+header {
+    margin: 0;
+}
+
+header > h1 {
+    border-bottom: 2px solid white;
+    margin: 0;
+    font-size: 5vw;
+    cursor: default;
+}
+
