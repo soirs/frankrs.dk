@@ -8,18 +8,24 @@ import { Link } from "react-router-dom";
 
 const Work = () => (
     <div>
-    <h2>My work.</h2>
+    <h3>My work.</h3>
         <div className="work">
+            <div className="project quote">
+            <h2 className="underline">
+                <Link className="underline" to="./Quote">Quote Generator</Link>
+                </h2>
+                <p>Ressources:</p>
+                <p>API: </p>                
+            </div>
+
+            <br/>
+
             <div className="project wiki">
                 <Link to="./Wiki">Wiki</Link>
                 <p>Ressources:</p>
                 <p>API: </p>      
             </div>
-            <div className="project quote">
-                <Link to="./Quote">Quote</Link>
-                <p>Ressources:</p>
-                <p>API: </p>                
-            </div>
+            
         </div>
         </div>
 )

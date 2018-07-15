@@ -13,6 +13,11 @@ import Work from "./components/work/Work";
 import Wiki from "./components/work/projects/wiki/Wiki";
 import Quote from "./components/work/projects/quote/Quote";
 
+// CSS
+import './css/document.css';
+// import './css/normalize.css';
+
+
 const App = () => {
     return (
       

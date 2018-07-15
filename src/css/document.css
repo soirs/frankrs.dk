@@ -1,0 +1,10 @@
+/* document.css */
+
+/* *, *:before, *:after {
+    box-sizing: border-box;
+  } */
+
+  .underline {
+        text-decoration: underline;
+        color: white;
+  }

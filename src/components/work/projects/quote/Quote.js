@@ -3,6 +3,7 @@
 import React from "react";
 import "./Quote.css";
 import Button from './Button';
+import { Link } from "react-router-dom";
 
 
 class Quote extends React.Component {
@@ -13,23 +14,11 @@ class Quote extends React.Component {
 content: "<p>Minimalism is not a lack of something. It’s simply the perfect amount of something.</p>",
 link: "https://quotesondesign.com/nicholas-burroughs-3/",
 title: "Nicholas Burroughs"
-        }],
-        // hasQuote: false
-    };
+        }]
+        };
 
     componentWillMount() {
-        // this.getNewQuote(this.state.quote)
-
-    //     fetch(this.state.url)
-    //       .then(response => response.json())
-    //       .then(data => this.storeQuote(data))
-    //       .catch(error => console.log(error));
-    }
-
-    componentDidMount() {
-        // this.getNewQuote(this.state.quote)
-
-
+    console.log(this.state.quote);
     }
 
     storeQuote = data => {
@@ -41,33 +30,31 @@ title: "Nicholas Burroughs"
         console.log({quote});
     }
 
-    getNewQuote = (quote) => {
-        fetch(this.state.url)
+    getNewQuote = () => {
+        // Button got cached on press. Had to add no-store.
+        // Took me quite a few hours to realize
+        fetch(this.state.url, {cache: "no-store"})
           .then(response => response.json())
           .then(data => this.storeQuote(data))
           .catch(error => console.log(error));
     }
 
     render() {
-        // const {
-        //     ID,
-        //     title,
-        //     content,
-        //     link
-        // } = this.state.quote;
-        //  const result = render.map();
-
-        // const { hasQuote } = this.state;
         return(
             <div>
-            <h2>Quote Generator</h2>
+                <h3>
+                    <Link to="/work" className="header__name">Work </Link>
+                    > Quote Generator
+                </h3>
+                <p>Uses <a href="quotesondesign.com" className="underline" target="_blank">QuotesOnDesign</a> API to fetch content</p>
             {
                 <div>
                 {this.state.quote.map((quote) => (
-                    <div className="quote" key={quote.ID}>
+                    <div className="quote__outer" key={quote.ID}>
 
                     <div className="quote__box">
 
+                       {/*Quote breaks at "."*/}
                         <p className="quote__text" dangerouslySetInnerHTML={{ __html: quote.content.split(".").join(".</br>") }}>
                         </p>
 
@@ -78,13 +65,7 @@ title: "Nicholas Burroughs"
                         <Button onClick={this.getNewQuote}>Get a new quote</Button>
                         </div>
                     </div>
-
                 ))}
-   
-            {/*<Button onClick={getNewQuote}></Button>*/}
-
-                    <p>{this.state.quote.ID}</p>
-                    <p>{this.state.content}</p>
                 </div>
             }
             </div>

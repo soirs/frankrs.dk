@@ -9,7 +9,7 @@ const Home = () => (
     <div className="home__message">
         <p>Hi there! I´m Frank.</p>
         <p>I'm a web developer and life enthusiast.</p>
-        <p>Heres´s my <Link to="/Work">work</Link>.</p>
+        <p>Here´s my <Link to="/Work">work</Link>.</p>
     </div>
    </div>
 )

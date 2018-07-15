@@ -3,13 +3,14 @@
 import React from "react";
 import "./Wiki.css";
 import WikiResult from "./WikiResult";
+import { Link } from "react-router-dom";
 
 class Wiki extends React.Component {
     state = {
         url2: 'https://en.wikipedia.org/w/api.php?action=query&gsrlimit=15&generator=search&origin=*&gsrsearch=Arsenal&format=json',
         url: `https://en.wikipedia.org/w/api.php?action=query&list=search&&origin=*&srsearch=$Arsenal&prop=info&inprop=url&utf8=&format=json`,
         pages: [],
-        search: 'youre+beautiful',
+        search: 'Dieter+Rams',
         hello: '',
     };
 
@@ -34,17 +35,19 @@ class Wiki extends React.Component {
           });
           this.setState({ pages });
           console.log({pages});
-          
       }
-
-    
 
     render() {
         return(
 
             <section className="wiki">
             <div className="wikiHead">
-                <h2>Wikipedia Searcher - link search</h2>
+            <h3>
+            <Link to="/work" className="header__name">Work </Link>
+            > Wikipedia Lookup
+        </h3>
+
+        <h4>Search Here</h4>
                 <input
                 type="text"
                 placeholder="Search..."
