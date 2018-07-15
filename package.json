@@ -4,7 +4,7 @@
   "homepage": "http://soirs.github.io/",
   "private": true,
   "dependencies": {
-    "classnames": "^2.2.5",
+    "classnames": "^2.2.6",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",

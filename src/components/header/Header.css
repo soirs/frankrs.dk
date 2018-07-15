@@ -1,11 +1,41 @@
 header {
     margin: 0;
+
+}
+.who {
+    display: flex;
+    justify-content: space-between;
+}
+header .header__name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    min-width: 30vw;
 }
 
-header > h1 {
-    border-bottom: 2px solid white;
+header nav {
+    margin-top: 10px;
+}
+
+header nav  > * {
+    display: inline-block;
+}
+
+
+
+header h1 {
     margin: 0;
-    font-size: 5vw;
+    font-size: 2vw;
     cursor: default;
 }
+
+.contact__info {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}.contact {
+    min-width: 20vw;
+}
+
+
+
 

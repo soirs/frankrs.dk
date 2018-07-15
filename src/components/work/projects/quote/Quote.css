@@ -1,0 +1,48 @@
+/* Quote.css */
+
+.quote {
+    width: 100vw;
+    height: 50vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+    margin: auto;
+}
+
+.quote__box {
+    position: relative;
+    display: inline-block
+}
+
+.quote__box p {
+    display: inline-block}
+.quote__symbol {
+    width: 20px;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    display: inline-block
+}
+.quote__text {
+    font-size: 1.7rem;
+    /* border-left: 2px solid white; */
+}
+
+.quote__author {
+    text-align: left;
+}
+
+.quote__button {
+    color: black;
+}
+
+button {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    -webkit-box-shadow: -3px 3px 0px 0px rgba(255,255,255,1);
+-moz-box-shadow: -3px 3px 0px 0px rgba(255,255,255,1);
+box-shadow: -3px 3px 0px 0px rgba(255,255,255,1);
+}
+

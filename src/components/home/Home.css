@@ -1,33 +1,16 @@
-body {
-  background-color: #2A4797;    
+a:hover {
+  color: #e8112d;
 }
 
-a::hover {
-  color: red;
+.home {
+  width: 100vw;
+  height: 80vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.icon {
-  /* margin-right: 4%; */
-}
-
-.contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2%;
-}
-
-.contact-item {
-  display: grid;
-  border-bottom: 2px solid white;
-}
-
-.phone {
-  grid-column: 1;
-}
-
-.mail {
-  grid-column: 2;
-}
-.linkedin {
-  grid-column: 3;
+.home p {
+  font-size: 2.5rem;
+  font-weight: 800;
 }
