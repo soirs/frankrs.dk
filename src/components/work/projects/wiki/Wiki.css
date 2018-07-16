@@ -1,3 +1,42 @@
-.wikiHead {
-    margin: 40px 0 40px;
+.wikipedia {
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.wiki__img{
+    filter: invert(100%);
+    width: 50%;
+    margin: 5vh auto;
+    display: block;
+}
+
+#wiki__search {
+    text-align: center;
+}
+#wiki__textbox {
+    background-color: white;
+    border: none;
+    padding: 6px;
+    color: black;
+
+}
+#wiki__button {
+    background-color: black;
+    border: none;
+    padding: 5px;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+.wiki__result {
+    padding-left: 10px;
+    list-style-type: upper-roman;
+}
+
+.wiki__result-spacing{
+    letter-spacing: 1.2px;
+}
+
+.wiki__result:hover {
+    padding-left: 7px;
+    border-left: 3px solid red;
 }

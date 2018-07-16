@@ -46,24 +46,22 @@ title: "Nicholas Burroughs"
                     <Link to="/work" className="header__name">Work </Link>
                     > Quote Generator
                 </h3>
-                <p>Uses <a href="quotesondesign.com" className="underline" target="_blank">QuotesOnDesign</a> API to fetch content</p>
             {
                 <div>
                 {this.state.quote.map((quote) => (
-                    <div className="quote__outer" key={quote.ID}>
+                    <div className="quote__box" key={quote.ID}>
 
-                    <div className="quote__box">
+                    <div className="">
 
-                       {/*Quote breaks at "."*/}
+                       {/*Quote breaks /n at "."*/}
                         <p className="quote__text" dangerouslySetInnerHTML={{ __html: quote.content.split(".").join(".</br>") }}>
                         </p>
+                        </div>
 
                         <p className="quote__author">
                          - {quote.title}
                         </p>
-                        <br/>
-                        <Button onClick={this.getNewQuote}>Get a new quote</Button>
-                        </div>
+                        <Button className="quote__button" onClick={this.getNewQuote}>Get a new quote</Button>
                     </div>
                 ))}
                 </div>

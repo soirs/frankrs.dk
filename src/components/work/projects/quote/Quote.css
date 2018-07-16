@@ -4,43 +4,41 @@ h3 {
     border-bottom: 2px solid white;
 }
 
-.quote__outer {
-    width: 100vw;
+.quote__box {
     height: 50vh;
     max-width: 70%;
-    display: flex;
+    display: inline-block;
     align-items: center;
-    justify-content: left; 
-    margin: 10vh auto 0;
-}
-
-.quote__box {
-    display: inline-block
+    margin: 5vh auto ;
 }
 
 .quote__text {
     font-size: 1.7rem;
     padding-left: 20px;
-    border-left: 2px solid white;
+    border-left: 3px solid white;
 }
 
 .quote__author {
     text-align: left;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
-button {
+#quote__button {
+    min-width: 20vw;
     color: white;
     background-color: black;
-    border: 3px solid white;
-    padding: 20px;
-    -webkit-box-shadow: -3px 3px 0px 0px rgba(255,255,255,1);
-    -moz-box-shadow: -3px 3px 0px 0px rgba(255,255,255,1);
-    box-shadow: -3px 3px 0px 0px rgba(255,255,255,1);
+    border: 1px solid black;
+    padding: 4px 20px;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(255,255,255,1);
+    box-shadow: 0px 3px 0px 0px rgba(255,255,255,1);
 }
-button:hover {
-    border: 3px solid red;
-    -webkit-box-shadow: -3px 3px 0px 0px red;
-    -moz-box-shadow: -3px 3px 0px 0px red;
-    box-shadow: -3px 3px 0px 0px red;
+#quote__button:hover {
+    /* border: 1px solid red; */
+    color: red;
+    -webkit-box-shadow: 0px 3px 0px 0px red;
+    -moz-box-shadow: 0px 3px 0px 0px red;
+    box-shadow: 0px 3px 0px 0px red;
 }
 

@@ -12,6 +12,8 @@ const Header = () => (
       Frank Richard Semakula.
     </Link>
     <br/>
+    <Link to="/About">About</Link>
+
     <Link to="/Work">Work</Link>
     </div>
     <nav>
