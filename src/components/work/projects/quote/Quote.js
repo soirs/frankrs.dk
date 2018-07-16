@@ -18,7 +18,7 @@ title: "Nicholas Burroughs"
         };
 
     componentWillMount() {
-    console.log(this.state.quote);
+    console.log(this.state.quote);  
     }
 
     storeQuote = data => {
