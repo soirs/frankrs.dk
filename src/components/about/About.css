@@ -1,0 +1,47 @@
+/* about.css  */
+
+.about {
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__top {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 5vh 0 ;
+
+}
+
+.about__top-left , .about__top-right {
+    min-width: 40%;
+    margin-right: 20px;
+
+}
+
+.about__top-right {
+    text-align: center;
+}
+
+.about__welcome {
+    width: 100%;
+    height: 100%;
+}
+
+.about__box {
+    min-width: 40%;
+    margin-right: 20px;
+}
+
+.about__facts-img {
+    border-radius: 50%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    justify-items: center;
+}
+
+li {
+    list-style-type: none;
+}

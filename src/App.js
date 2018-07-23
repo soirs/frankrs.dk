@@ -5,7 +5,7 @@ import './App.css';
 
 import Home from "./components/home/Home";
 // import Navigation from "./components/navigation/Navigation";
-// import Bio from "./components/bio/Bio";
+import About from "./components/about/About";
 import Header from "./components/header/Header";
 
 import Work from "./components/work/Work";
@@ -31,6 +31,7 @@ const App = () => {
             <div className="content">
               <Switch>
                 <Route exact path='/' component={Home}/>
+                <Route exact path='/About' component={About}/>
                 <Route exact path='/Work' component={Work}/>
                   <Route exact path='/Wiki' component={Wiki}/>
                   <Route exact path='/Quote' component={Quote}/>
