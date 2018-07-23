@@ -11,15 +11,15 @@ class Welcome extends React.Component {
         var currentHour = today.getHours()
 
         if (currentHour < 12) {
-            console.log('good morning')
+            console.log('good morning message')
             time = "morning";
             } 
         else if (currentHour < 18) {
-            console.log('good afternoon')
+            console.log('good afternoon message')
             time = "afternoon";
         }
         else {
-            console.log('good evening')
+            console.log('good evening message')
             time = "evening";
     }
         return (
@@ -34,9 +34,8 @@ class Welcome extends React.Component {
 const Home = () => (
    <div className="home">
     <div className="home__message">
-    <p><Welcome/>
-    </p>
-        <p>Hi there! I´m Frank.</p>
+    <p><Welcome/></p>
+        <p>I´m Frank.</p>
         <p>I'm a web developer and life enthusiast.</p>
         <p>Here´s my <Link className="underline" to="/Work">work</Link>.</p>
     </div>
