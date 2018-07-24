@@ -15,18 +15,21 @@
     margin-bottom: 5vh;
 }
 #wiki__textbox {
-    background-color: white;
+    background-color: rgb(22, 22, 22);
     border: none;
     padding: 10px;
-    color: black;
+    color: white;
     text-transform: capitalize;
 }
+#wiki__textbox:focus {
+    /* background-color: white; */
+}
 #wiki__button {
-    background-color: black;
+    background-color: rgb(51, 51, 51);
     border: none;
-    padding: 9px;
+    border-left: 1px dotted white;
+    padding: 10px;
     text-transform: uppercase;
-    border: 1px solid white;
 }
 .wiki__result {
     padding-left: 10px;

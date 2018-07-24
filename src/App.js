@@ -5,8 +5,8 @@ import './App.css';
 
 import Home from "./components/home/Home";
 // import Navigation from "./components/navigation/Navigation";
-import About from "./components/about/About";
 import Header from "./components/header/Header";
+import About from "./components/about/About";
 
 import Work from "./components/work/Work";
 // Projects
@@ -40,7 +40,7 @@ const App = () => {
 
             <Helmet>
             <meta charSet="utf-8" />
-            <title>Mum told me I was dynamic</title>
+            <title>Frank Richard Semakula | Portfolio</title>
             <link rel="canonical" href="https://frankrs.dk" />
     
             <script defer src="https://pro.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-rAGYBPVpurUH2YLc/Skiv4TE1iQ/wAocPQdQT73UR0LEZ3Os2E3wGBn9fRISQJIK" crossorigin="anonymous"></script>
@@ -51,22 +51,6 @@ const App = () => {
       </BrowserRouter>
     );
   }
-
-  // class Head extends React.Component {
-  //   render () {
-  //     return (
-  //         <div className="head">
-  //             <Helmet>
-  //                 <meta charSet="utf-8" />
-  //                 <title>Mum told me I was dynamic</title>
-  //                 <link rel="canonical" href="https://frankrs.dk" />
-
-  //                 <script defer src="https://pro.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-rAGYBPVpurUH2YLc/Skiv4TE1iQ/wAocPQdQT73UR0LEZ3Os2E3wGBn9fRISQJIK" crossorigin="anonymous"></script>
-  //             </Helmet>
-  //         </div>
-  //     );
-  //   }
-  // };
 
 
 export default App;

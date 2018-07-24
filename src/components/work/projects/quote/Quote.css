@@ -25,6 +25,7 @@ h3 {
 }
 
 #quote__button {
+    cursor: pointer;
     min-width: 20vw;
     color: white;
     background-color: black;

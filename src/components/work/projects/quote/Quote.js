@@ -8,13 +8,13 @@ import { Link } from "react-router-dom";
 
 class Quote extends React.Component {
     state = {
-        url: "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
+        url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
         quote: [{
             ID: 2177,
-content: "<p>Minimalism is not a lack of something. It’s simply the perfect amount of something.</p>",
-link: "https://quotesondesign.com/nicholas-burroughs-3/",
-title: "Nicholas Burroughs"
-        }]
+            content: "<p>Minimalism is not a lack of something. It’s simply the perfect amount of something.</p>",
+            link: "https://quotesondesign.com/nicholas-burroughs-3/",
+            title: "Nicholas Burroughs"
+            }]
         };
 
     componentWillMount() {

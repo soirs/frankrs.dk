@@ -1,3 +1,18 @@
+# My first take on a React.js portfolio
+
+> My personal portfolio for showcase and gags
+>
+## Todo
+
+> Router history is still broken
+> 404 needed
+> "Work" page is not styled properly
+> SSL is not fully running on domain - Cloudflare
+> Proper navigation needed
+> Responsive
+
+## Build Setup
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

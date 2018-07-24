@@ -3,7 +3,7 @@
 import React from "react";
 import "./About.css";
 import FrankImg from "./img/frank.JPG";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const About = () => (
   <div>
@@ -14,13 +14,11 @@ const About = () => (
     <h2 className="about__welcome">Hello World!</h2>
   </div>
   <div className="about__top-right">
-    <img src={FrankImg} alt="Frank Richard Semakula" className="about__facts-img"/>
+    <img src={FrankImg} alt="Frank Richard Semakula" className="about__img"/>
   </div>
 </div>
 
-  <div className="about">
-
-
+  <div className="about__content">
     <div className="about__box about__left about__bio">
       <h3 className="about__bio-frank">Who am I?</h3>
       <p>I'm a frontend developer living in Aarhus, Denmark. I'm your rough diamond.</p>
@@ -42,7 +40,7 @@ const About = () => (
       <h4>Misc.</h4>
       <p>Git, C#</p>
     </div>
-    </div>
+  </div>
     <hr/>
 
     <ul className="contact__info">

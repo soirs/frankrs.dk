@@ -10,7 +10,7 @@ const Work = () => (
     <div>
     <h3>My work.</h3>
         <div className="work">
-        <p className="underline">Commercial</p>
+        <p className="">Commercial</p>
         <div className="project som">
             <h2 className="underline">
             <a href="https://info.firstagenda.com/state-of-meetings">
@@ -21,7 +21,7 @@ const Work = () => (
         </div>
 
         <hr/>
-        <p className="underline">Personal playground</p>
+        <p className="">Personal playground</p>
 
         <div className="project movie">
             <h2 className="underline"><a href="https://moviedb.frankrs.dk/">Movie Database</a></h2>
@@ -31,12 +31,18 @@ const Work = () => (
             <h2 className="underline">
                 <Link to="./Quote">Quote Generator</Link>
             </h2>
-            <p>Uses <a href="https://www.quotesondesign.com" className="underline" target="_blank" rel="noopener noreferrer">QuotesOnDesign</a> API to fetch content</p>
+            <p>Uses <a href="https://www.quotesondesign.com" className="underline" target="_blank" rel="noopener">QuotesOnDesign</a> API to fetch content</p>
             </div>
 
             <div className="project wiki">
             <h2 className="underline">
                 <Link to="./Wiki">Wikipedia Searcher</Link>
+                </h2>  
+            </div>
+
+            <div className="project">
+            <h2 className="underline">
+                <a href="https://old.frankrs.dk" className="underline" target="_blank" rel="">Old Portfolio</a> 
                 </h2>  
             </div>
 
