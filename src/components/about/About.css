@@ -1,12 +1,7 @@
 /* about.css  */
 
-.about__content {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    /* flex-direction: row; */
-}
 
+/* Hello World + Portrait  */
 .about__top {
     display:flex;
     justify-content:space-between;
@@ -20,16 +15,22 @@
 }
 
 .about__top-right {
-    text-align: center;
+    text-align: right;
 }
 
-.about__welcome {
-}
 .about__img {
     border-radius: 50%;
     width: 50%;
     margin: 0 auto;
     text-align: center;
+}
+
+/* Who am I + Skills */
+.about__content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* flex-direction: row; */
 }
 
 .about__box {

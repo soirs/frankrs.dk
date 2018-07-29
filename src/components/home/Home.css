@@ -15,6 +15,18 @@ a:hover {
   font-weight: 800;
 }
 
+/* Welcome message */
 .home__message-time {
   color: rgba(255,255,255,.2);
+}
+/* Social icons bottom */
+.social a {
+  margin-right: 45px;
+}
+
+a .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.6875rem;
+  height: 1.6875rem;
 }

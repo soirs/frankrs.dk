@@ -7,9 +7,10 @@
 > Router history is still broken
 > 404 needed
 > "Work" page is not styled properly
-> SSL is not fully running on domain - Cloudflare
 > Proper navigation needed
 > Responsive
+> Deploy on git push
+> SSL is not fully running on domain - Cloudflare
 
 ## Build Setup
 

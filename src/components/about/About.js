@@ -2,6 +2,8 @@
 
 import React from "react";
 import "./About.css";
+import Icon from '../icon/Icon';
+
 import FrankImg from "./img/frank.JPG";
 // import { Link } from "react-router-dom";
 
@@ -12,6 +14,14 @@ const About = () => (
   <div className="about__top">
   <div className="about__top-left">
     <h2 className="about__welcome">Hello World!</h2>
+    <div className="social">
+            <a href="https://github.com/soirs/" target="_blank">
+                <Icon name="github-white" />
+            </a>
+            <a href="https://www.linkedin.com/in/FrankRichardSemakula" target="_blank">
+                <Icon name="linkedin-white" />
+            </a>
+        </div>
   </div>
   <div className="about__top-right">
     <img src={FrankImg} alt="Frank Richard Semakula" className="about__img"/>
