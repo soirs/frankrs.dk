@@ -24,6 +24,10 @@
 #wiki__textbox:focus {
     /* background-color: white; */
 }
+
+.wiki__searchHistory {
+    color:grey;
+}
 #wiki__button {
     background-color: rgb(51, 51, 51);
     border: none;

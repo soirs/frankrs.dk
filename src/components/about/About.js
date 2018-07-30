@@ -15,10 +15,10 @@ const About = () => (
   <div className="about__top-left">
     <h2 className="about__welcome">Hello World!</h2>
     <div className="social">
-            <a href="https://github.com/soirs/" target="_blank">
+            <a href="https://github.com/soirs/" target="_blank" rel="noopener noreferrer">
                 <Icon name="github-white" />
             </a>
-            <a href="https://www.linkedin.com/in/FrankRichardSemakula" target="_blank">
+            <a href="https://www.linkedin.com/in/FrankRichardSemakula" target="_blank" rel="noopener noreferrer">
                 <Icon name="linkedin-white" />
             </a>
         </div>

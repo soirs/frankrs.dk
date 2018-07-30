@@ -41,10 +41,10 @@ const Home = () => (
         <p>I'm a web developer and life enthusiast.</p>
         <p>Here´s my <Link className="underline" to="/Work">work</Link>.</p>
         <div className="social">
-            <a href="https://github.com/soirs/" target="_blank">
+            <a href="https://github.com/soirs/" target="_blank" rel="noopener noreferrer">
                 <Icon name="github-white" />
             </a>
-            <a href="https://www.linkedin.com/in/FrankRichardSemakula" target="_blank">
+            <a href="https://www.linkedin.com/in/FrankRichardSemakula" target="_blank" rel="noopener noreferrer">
                 <Icon name="linkedin-white" />
             </a>
         </div>

@@ -31,7 +31,7 @@ const Work = () => (
             <h2 className="underline">
                 <Link to="./Quote">Quote Generator</Link>
             </h2>
-            <p>Uses <a href="https://www.quotesondesign.com" className="underline" target="_blank" rel="noopener">QuotesOnDesign</a> API to fetch content</p>
+            <p>Uses <a href="https://www.quotesondesign.com" className="underline" target="_blank" rel="noopener noreferrer">QuotesOnDesign</a> API to fetch content</p>
             </div>
 
             <div className="project wiki">
@@ -42,7 +42,7 @@ const Work = () => (
 
             <div className="project">
             <h2 className="underline">
-                <a href="https://old.frankrs.dk" className="underline" target="_blank" rel="">Old Portfolio</a> 
+                <a href="https://old.frankrs.dk" className="underline" target="_blank" rel="noopener noreferrer">Old Portfolio</a> 
                 </h2>  
             </div>
 

@@ -1,7 +1,6 @@
 // Button.js
 
 import React from "react";
-import "./Button.css"
 
 const Button = ({ onClick, children }) => (
   <div className="quote__button-box">

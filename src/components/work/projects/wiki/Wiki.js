@@ -9,6 +9,7 @@ class Wiki extends React.Component {
     state = {
         pages: [],
         search: 'minimalism',
+        prior: '',
     };
     constructor(props) {
         super(props);
@@ -18,8 +19,8 @@ class Wiki extends React.Component {
       }
       handleChange(event) {
         this.setState({search: event.target.value});
-
-        console.log("sxx   " + event.target.value)
+        //CONSOLE Log
+        // console.log("sxx   " + event.target.value)
       }
         handleSubmit(event) {
         // alert('A name was submitted: ' + this.state.search);
@@ -38,6 +39,9 @@ class Wiki extends React.Component {
     fetchWiki = () => {
 
         this.removeElementsByClassName("wiki__result");
+
+        // Clears textbox on buttonclick not enter keypress
+        document.getElementById('wiki__textbox').value = '';
         
         // this.setState({search: ''});
         // console.log(this.state.search);
@@ -45,7 +49,7 @@ class Wiki extends React.Component {
 
         this.init();
     }
-
+    // CWM. On component open it displays "Minimalism"
       init() {
         this.removeElementsByClassName("wiki__result");
         let searchResults = document.getElementById('searchResults');
@@ -61,10 +65,12 @@ class Wiki extends React.Component {
         fetch(api, {cache: "no-store"})
           .then(response => response.json())
           .then(data => {
+              console.log(data);
             for(var i=0; i < data[1].length; i++){
                 var li = document.createElement('li');
                 li.className = "wiki__result";
-                console.log(data);
+                //LOG TO CONSOLE
+                //console.log(data);
 
                 li.innerHTML = 
                 "<p class='wiki__result-spacing'><strong><a class='underline' href=" + data[3][i]+" target='_blank'>" + data[1][i]+ "</a></strong><p>" + data[2][i] + "</p></p>";
@@ -72,10 +78,29 @@ class Wiki extends React.Component {
             }
           })
           .catch(error => console.log(error));
+
+          this.addList();
+
       }
 
+      addList = () => {
+        String.prototype.capitalize = function() {
+          return this.charAt(0).toUpperCase() + this.slice(1);
+        };
+        this.setState(prevState => ({
+          prior: [...prevState.prior, (this.state.search + ", ").capitalize()]
+        }));
+        if (this.state.prior.length > 2) {
+          this.state.prior.slice(Math.max(this.state.prior.length - 3, 1));
+    
+          console.log(
+            this.state.prior.length  +" entries | " +
+              this.state.prior 
+          );
+        }
+      };
     componentDidMount() {
-        this.setState({search: ''});
+        // this.setState({search: ''});
 
         this.init();
         }
@@ -96,22 +121,27 @@ class Wiki extends React.Component {
         <form onSubmit={this.handleSubmit}>
                 <input
                 type="text"
+                autoFocus
                 id="wiki__textbox"
-                // placeholder={this.state.search}
+                placeholder={this.state.search}
                 ref="filterTextInput"
-                value={this.state.search}
+                // value={this.state.search}
+                // onFocus="this.value=''"
                 onChange={this.handleChange}
               />
               <button id="wiki__button" type="button" className="wiki__button" onClick={this.fetchWiki}> Search </button>
         </form>
               
-        <p>You are now looking for: <i>{this.state.search}</i> </p>
+        <p className="wiki__searchHistory">You've been searching for: <br/><i>{this.state.prior.slice(Math.max(this.state.prior.length - 3, 1))}</i> </p>
+
 
         </div>
             <ul id="searchResults"></ul>
 
             </div>
-                
+            
+{/*<iframe height='383' scrolling='no' title='Wikipedia Lookup Generator FreeCodeCamp Frontend' src='//codepen.io/hoima/embed/NBXYVM/?height=383&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style={{width: '100%'}}>See the Pen <a href='https://codepen.io/hoima/pen/NBXYVM/'>Wikipedia Lookup Generator FreeCodeCamp Frontend</a> by Frank Richard Semakula (<a href='https://codepen.io/hoima'>@hoima</a>) on <a href='https://codepen.io'>CodePen</a>.
+        </iframe>*/}
             </section>
         )
     }
