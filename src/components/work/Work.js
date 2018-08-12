@@ -10,7 +10,9 @@ const Work = () => (
     <div>
     <h3>My work.</h3>
         <div className="work">
-        <p className="">Commercial</p>
+        <p className="">COMMERCIAL</p>
+        <br/>
+        <br/>
         <div className="project som">
             <h2 className="underline">
             <a href="https://info.firstagenda.com/state-of-meetings">
@@ -21,8 +23,10 @@ const Work = () => (
         </div>
 
         <hr/>
-        <p className="">Personal playground</p>
-
+        <p className="">PERSONAL PLAYGROUND</p>
+        <br/>
+        <br/>
+        
         <div className="project movie">
             <h2 className="underline"><a href="https://moviedb.frankrs.dk/">Movie Database</a></h2>
         </div>
@@ -33,6 +37,8 @@ const Work = () => (
             </h2>
             <p>Uses <a href="https://www.quotesondesign.com" className="underline" target="_blank" rel="noopener noreferrer">QuotesOnDesign</a> API to fetch content</p>
             </div>
+        <br/>
+
 
             <div className="project wiki">
             <h2 className="underline">

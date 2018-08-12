@@ -42,10 +42,10 @@ const About = () => (
     <div className="about__box about__right about__facts">
       <h3>Skills.</h3>
       <h4>Aesthetics and visuals.</h4>
-      <p>HTML5, Bootstrap, SaSS</p>
+      <p>HTML5, Bootstrap, Sass</p>
       <h4>JavaScript.</h4>
       <p>React, Vue, jQuery</p>
-      <h4>Server.</h4>
+      <h4>Database.</h4>
       <p>SQL, Node</p>
       <h4>Misc.</h4>
       <p>Git, C#</p>
